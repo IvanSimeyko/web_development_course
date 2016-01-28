@@ -1,22 +1,73 @@
-/*GENERAL STYLES */
-body{
+/* GENERAL STYLES */
+body {
     font-family: Arial, sans-serif;
     font-size: 100%
 }
 
-.container{
+ul {
+    margin: 0;
+    padding: 0
+}
+
+ul li{
+   list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
     margin: 0 auto;
     width: 960px
 }
 
-/*HEADER*/
-.header{
-    padding: 50px, 0;
+/* HEADER */
+.header {
+    padding: 50px 0;
     background-color: yellowgreen;
 }
 
-/* ищем в секции heder тег h1*/
-.header h1{
+/* ищем в секции header тег h1 */
+.header h1,
+.header h2 {
     color: greenyellow;
     text-align: center;
 }
+
+/* NAVIGATIONS */
+.page-navigation {
+    background-color: #222;
+    border-color: #101010;
+    min-height: 64px;
+}
+
+/* найдем дочерний элемент li */
+.page-navigation li {
+    float: left;
+    width: 100px;
+}
+
+/* найдем дочерний элемент a */
+.page-navigation a {
+    display: block;
+    color: #9d9d9d;
+    line-height: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* выбираем элемент с псевдоклассом hower, что означает наведение мышкой на элемент */
+.page-navigation li a:hover {
+    color: yellowgreen;
+    background-color: #000000;
+}
+
+.login{
+    padding: 15px 0;
+    float: right;
+}
+
+/* ищем элементы формы */
+.login input[type='text'],
+.login input[type='password']

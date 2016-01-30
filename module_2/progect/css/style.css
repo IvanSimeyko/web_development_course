@@ -17,6 +17,11 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
 .container {
     margin: 0 auto;
     width: 960px
@@ -85,7 +90,8 @@ a{
 }
 
 /* изменим свойства при наведении на кнопку */
-.login input[type='submit']:hover {
+.login input[type='submit']:hover,
+button:hover {
     background-color: darkgrey;
     color: white;
 }
@@ -115,29 +121,54 @@ a{
     box-sizing:border-box;
 }
 
+.collections > div:first-child{
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.collections > div:last-child{
+    padding-left: 5px;
+    padding-right: 0;
+}
+
 .collection-item {
     border: 1px solid #959595;
 }
 
-.collection-iten img {
-    width: 100%
+.collection-item img,
+.collection-item video{
+    width: 100%;
 }
 
 .collection-text {
     padding: 0 20px 20px 20px,
 }
+
 .collection-text h3 {
     color: yellowgreen;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .collection-text p {
     padding: 10px;
-}
+    max-height: 80px;
+    overflow: hidden;}
 
 .collection-text button {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
+}
+
+/* FOOTER*/
+.footer {
+    background-color: yellowgreen;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 30px;
+    /*height: 90px;*/
 }

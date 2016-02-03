@@ -154,7 +154,7 @@ button:hover {
 
 .collection-text p {
     padding: 10px;
-    max-height: 80px;
+    height: 80px;
     overflow: hidden;}
 
 .collection-text button {

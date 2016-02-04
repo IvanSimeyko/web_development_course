@@ -38,3 +38,13 @@ HTML DOM - методы.
 Это действия которые мржем применть к html-документам. 
 innerHTML - меняет текст в элементе. 
 document.querySelector('input[type='text']').values; - получить значение введенное в поле формы. 
+
+События. 
+onclick
+onload - когда загрузился элемент или его определенная часть
+onchange (для чекбоксов) - когда изменяется их положение
+ommouseover, onmouseout
+onmousedown, onmmouseup
+onkeypress, onkeyup, onkeydown
+onfocus, onblur
+

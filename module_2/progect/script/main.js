@@ -1,10 +1,10 @@
-function showText(elem) {
-    console.log(elem);
-    if (elem.previousElementSibling.clientHeight === 80) {
-        elem.previousElementSibling.style.height = '100%';
-        elem.innerHTML = 'Sow less...';
+function showText (el) {
+    console.log(el);
+    if (el.previousElementSibling.clientHeight === 80) {
+        el.previousElementSibling.style.height = '100%';
+        el.innerHTML = 'Sow less...';
     } else {
-        elem.previousElementSibling.style.height = '80px';
-        elem.innerHTML = 'Read more...';
+        el.previousElementSibling.style.height = '80px';
+        el.innerHTML = 'Read more...';
     }
 }

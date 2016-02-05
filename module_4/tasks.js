@@ -19,7 +19,6 @@ console.log(isEven(21));
 Якщо параметр передати, то функція має повернути його. А якщо не передати, то фунція має повернути глобальну змінну
 senseOfLife.
 */
-
 var senseOfLife = 42;
 
 function showVariable (otherSenseOfLife) {
@@ -29,5 +28,26 @@ function showVariable (otherSenseOfLife) {
     return senseOfLife;
 }
 
-console.log(showVariable(5));
-console.log(showVariable());
+/*console.log(showVariable(5));
+console.log(showVariable());*/
+
+/*
+зверніться до елемента <div id="test"></div> за id = "test" та присвойте вибраний елемент змінній id.
+- зверніться до елемента <div class ="test"></div> за класом class = "test" та присвойте вибрані елементи змінній className
+- зверніться до елемента <div></div> за тегом та присвойте вибрані елементи змінній tag
+*/
+var id = document.getElementById('test');
+var className = document.getElementsByClassName('test');
+var tag = document.getElementsByTagName('div');
+
+/*
+У елемент <ul id="test"></ul> потрібно додати три <li></li> елементи. Вибрати <ul> елемент за допомогою id = “test”.
+Створити кожен новий <li></li> елемент за допомогою методу createElement() та додати до списоку за допомогою методу
+appendChild().
+ */
+
+for(var i=0; i<3; i++){
+    var ul = document.getElementById('test');
+    var li = document.createElement('li');
+    ul.appendChild(li)
+}

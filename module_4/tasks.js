@@ -51,3 +51,27 @@ for(var i=0; i<3; i++){
     var li = document.createElement('li');
     ul.appendChild(li)
 }
+
+
+/*Функция калькулятор*/
+
+function count (num1, num2, mark) {
+    switch(mark) {
+        case '+':
+            res = num1 + num2;
+            break;
+        case '-':
+            res = num1 - num2;
+            break;
+        case '/':
+            res = num1 / num2;
+            break;
+        case '*':
+            res = num1 * num2;
+            break;
+    }
+    return res
+}
+
+console.log(count(1, 1, "+"));
+console.log(count(10, 2, "/"));

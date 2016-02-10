@@ -1,0 +1,6 @@
+Выбор елементов:
+по id: $("#title").css('background-color', 'yellow');
+по классу: $(".text").css('background-color', 'yellow');
+по тегу: $("p").css('background-color', 'yellow');
+поиск по вложенным (дочерним) элементам: $("p span").css('background-color', 'yellow'); или можно так $("p").find("span").css('background-color', 'yellow');
+
